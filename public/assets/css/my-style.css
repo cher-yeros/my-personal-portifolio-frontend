@@ -1,0 +1,42 @@
+.modal {
+  z-index: 10000;
+}
+.modal-dialog {
+  max-width: 80vw;
+  z-index: 100000;
+}
+
+.modal-header {
+  background-color: #f9f9f9;
+  padding-top: 0.7rem;
+  padding-bottom: 0.7rem;
+}
+
+.modal-title {
+  font-size: 1.2rem;
+  letter-spacing: 1px;
+}
+
+.modal-body {
+  height: 80vh;
+  overflow: auto;
+}
+
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+::-webkit-scrollbar-track {
+  border-radius: 10px;
+  background: rgba(0, 0, 0, 0.1);
+}
+::-webkit-scrollbar-thumb {
+  border-radius: 10px;
+  background: rgba(0, 0, 0, 0.2);
+}
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(0, 0, 0, 0.4);
+}
+::-webkit-scrollbar-thumb:active {
+  background: rgba(0, 0, 0, 0.9);
+}
