@@ -8,7 +8,7 @@ function Hero() {
       className="d-flex flex-column justify-content-center align-items-center"
     >
       <div className="hero-container" data-aos="fade-in">
-        <h1>Alex Smith</h1>
+        <h1>Yerosen Diriba</h1>
         <p>
           I'm{" "}
           <span
@@ -16,18 +16,8 @@ function Hero() {
             data-typed-items="Designer, Developer, Freelancer, Photographer"
           >
             <TypeAnimation
-              sequence={[
-                // Same String at the start will only be typed once, initially
-                "Designer",
-                1000,
-                "Developer",
-                1000,
-                "Freelancer",
-                1000,
-                "Photographer",
-                1000,
-              ]}
-              speed={20}
+              sequence={["Web Developer", 1000, "Freelancer", 1000]}
+              speed={30}
               repeat={Infinity}
             />
           </span>

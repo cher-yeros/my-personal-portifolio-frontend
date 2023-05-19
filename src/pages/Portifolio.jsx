@@ -4,15 +4,38 @@ import GLightbox from "glightbox";
 import { Link } from "react-router-dom";
 import { useState } from "react";
 import PortifolioDetail from "./PortifolioDetail";
+import Isotope from "isotope-layout";
 
 function Portifolio() {
   const [showPortifolioDetail, setShowPortifolioDetail] = useState(false);
+  const [portfolioIsotope, setPortfolioIsotope] = useState(null);
+
+  const [isotope, setIsotope] = React.useState(null);
+  // state for storing the filter keyword, with an initial value of *, which matches everything
+  const [filterKey, setFilterKey] = React.useState("*");
 
   useEffect(() => {
     new GLightbox({
       selector: ".portfolio-lightbox",
     });
+
+    const portfolioContainer = document.getElementById("portifolio-container");
+
+    let pi = new Isotope(portfolioContainer, {
+      itemSelector: ".portfolio-item",
+      layoutMode: "fitRows",
+    });
+
+    setIsotope(pi);
   }, []);
+
+  useEffect(() => {
+    if (isotope) {
+      filterKey === "*"
+        ? isotope.arrange({ filter: `*` })
+        : isotope.arrange({ filter: `.${filterKey}` });
+    }
+  }, [isotope, filterKey]);
 
   return (
     <section id="portfolio" className="portfolio section-bg">
@@ -30,17 +53,37 @@ function Portifolio() {
         <div className="row" data-aos="fade-up">
           <div className="col-lg-12 d-flex justify-content-center">
             <ul id="portfolio-flters">
-              <li data-filter="*" className="filter-active">
+              <li
+                data-filter="*"
+                className="filter-active"
+                onClick={(e) => setFilterKey("*")}
+              >
                 All
               </li>
-              <li data-filter=".filter-app">App</li>
-              <li data-filter=".filter-card">Card</li>
-              <li data-filter=".filter-web">Web</li>
+              <li
+                data-filter=".filter-web"
+                onClick={(e) => setFilterKey("filter-web")}
+              >
+                Web App
+              </li>
+              <li
+                data-filter=".filter-app"
+                onClick={(e) => setFilterKey("filter-app")}
+              >
+                Mobile App
+              </li>
+              <li
+                data-filter=".filter-app"
+                onClick={(e) => setFilterKey("filter-app")}
+              >
+                Graphic Design
+              </li>
             </ul>
           </div>
         </div>
 
         <div
+          id="portifolio-container"
           className="row portfolio-container"
           data-aos="fade-up"
           data-aos-delay="100"

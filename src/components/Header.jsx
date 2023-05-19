@@ -7,7 +7,7 @@ function Header() {
       <div class="d-flex flex-column">
         <div class="profile">
           <img
-            src="assets/img/profile-img.jpg"
+            src="assets/img/my-profile-img.jpg"
             alt=""
             class="img-fluid rounded-circle"
           />

@@ -7,10 +7,18 @@ function About() {
         <div className="section-title">
           <h2>About</h2>
           <p>
-            Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex
-            aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam quos
-            quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia
-            fugiat sit in iste officiis commodi quidem hic quas.
+            I am a web developer with 4+ years of experience in the industry. I
+            have a strong understanding of React.js, Node.js, HTML, CSS, and
+            JavaScript, and I am proficient in a variety of web development
+            frameworks and technologies. I am also a creative thinker and I am
+            always looking for new ways to improve the user experience of
+            websites and applications.
+          </p>
+          <p>
+            I am confident that I can use my skills and experience to help you
+            create a website or application that meets your needs. Please feel
+            free to contact me if you have any questions or would like to
+            discuss a project.
           </p>
         </div>
 
@@ -23,54 +31,56 @@ function About() {
             />
           </div>
           <div className="col-lg-8 pt-4 pt-lg-0 content" data-aos="fade-left">
-            <h3>UI/UX Designer &amp; Web Developer.</h3>
-            <p className="fst-italic">
+            <h3>Full Stack Developer.</h3>
+            {/* <p className="fst-italic">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
               eiusmod tempor incididunt ut labore et dolore magna aliqua.
-            </p>
+            </p> */}
             <div className="row">
               <div className="col-lg-6">
                 <ul>
                   <li>
-                    <i className="bi bi-chevron-right"></i>{" "}
-                    <strong>Birthday:</strong> <span>1 May 1995</span>
+                    <i className="bi bi-chevron-right"></i>
+                    <strong>Birthday:</strong> <span>24 Oct 2000</span>
                   </li>
                   <li>
-                    <i className="bi bi-chevron-right"></i>{" "}
-                    <strong>Website:</strong> <span>www.example.com</span>
+                    <i className="bi bi-chevron-right"></i>
+                    <strong>Website:</strong> <span>www.yerosendiriba.com</span>
                   </li>
                   <li>
-                    <i className="bi bi-chevron-right"></i>{" "}
-                    <strong>Phone:</strong> <span>+123 456 7890</span>
+                    <i className="bi bi-chevron-right"></i>
+                    <strong>Phone:</strong> <span>+251 945 933 607</span>
                   </li>
                   <li>
-                    <i className="bi bi-chevron-right"></i>{" "}
-                    <strong>City:</strong> <span>New York, USA</span>
+                    <i className="bi bi-chevron-right"></i>
+                    <strong>City:</strong> <span>Addis Ababa, Ethiopia</span>
                   </li>
                 </ul>
               </div>
               <div className="col-lg-6">
                 <ul>
                   <li>
-                    <i className="bi bi-chevron-right"></i>{" "}
-                    <strong>Age:</strong> <span>30</span>
+                    <i className="bi bi-chevron-right"></i>
+                    <strong>Age:</strong> <span>22</span>
                   </li>
                   <li>
-                    <i className="bi bi-chevron-right"></i>{" "}
-                    <strong>Degree:</strong> <span>Master</span>
+                    <i className="bi bi-chevron-right"></i>
+                    <strong>Education:</strong>{" "}
+                    <span>BSc in Computer Science</span>
                   </li>
                   <li>
-                    <i className="bi bi-chevron-right"></i>{" "}
-                    <strong>PhEmailone:</strong> <span>email@example.com</span>
+                    <i className="bi bi-chevron-right"></i>
+                    <strong>E-mail:</strong>{" "}
+                    <span>yerosendiriba1@gmail.com</span>
                   </li>
                   <li>
-                    <i className="bi bi-chevron-right"></i>{" "}
+                    <i className="bi bi-chevron-right"></i>
                     <strong>Freelance:</strong> <span>Available</span>
                   </li>
                 </ul>
               </div>
             </div>
-            <p>
+            {/* <p>
               Officiis eligendi itaque labore et dolorum mollitia officiis optio
               vero. Quisquam sunt adipisci omnis et ut. Nulla accusantium dolor
               incidunt officia tempore. Et eius omnis. Cupiditate ut dicta
@@ -78,7 +88,7 @@ function About() {
               repellendus itaque neque. Aliquid amet quidem ut quaerat
               cupiditate. Ab et eum qui repellendus omnis culpa magni laudantium
               dolores.
-            </p>
+            </p> */}
           </div>
         </div>
       </div>

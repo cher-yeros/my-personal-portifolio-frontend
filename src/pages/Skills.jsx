@@ -37,27 +37,144 @@ function Skills() {
     }
   };
 
+  // const skills = [
+  //   { name: "HTML", value: 100 },
+  //   { name: "CSS", value: 100 },
+  //   { name: "React", value: 100 },
+  //   { name: "Material UI", value: 100 },
+  //   { name: "Bootstrap", value: 100 },
+  //   { name: "Node", value: 100 },
+  //   { name: "Express", value: 100 },
+  //   { name: "MySql", value: 100 },
+  // ];
+
   const skills = [
-    { name: "HTML", value: 100 },
-    { name: "CSS", value: 100 },
-    { name: "React", value: 100 },
-    { name: "Material UI", value: 100 },
-    { name: "Bootstrap", value: 100 },
-    { name: "Node", value: 100 },
-    { name: "Express", value: 100 },
-    { name: "MySql", value: 100 },
+    {
+      name: "Front-End Development",
+      examples: [
+        "HTML",
+        "CSS",
+        "JavaScript",
+        "React",
+        "Redux",
+        "Apollo Graphql",
+      ],
+    },
+    {
+      name: "Back-End Development",
+      examples: [
+        "Node.js",
+        "Express",
+        "MongoDB",
+        "MySQL",
+        "Restful API",
+        "Graphql",
+      ],
+    },
+    // {
+    //   name: "Data Science",
+    //   examples: [
+    //     "Python",
+    //     "R",
+    //     "SQL",
+    //     "Machine Learning",
+    //     "Natural Language Processing",
+    //   ],
+    // },
+    // {
+    //   name: "Cybersecurity",
+    //   examples: [
+    //     "C",
+    //     "C++",
+    //     "Java",
+    //     "Python",
+    //     "Network Security",
+    //     "Penetration Testing",
+    //   ],
+    // },
+    // {
+    //   name: "Game Development",
+    //   examples: ["C++", "Java", "Unity", "Unreal Engine"],
+    // },
+    {
+      name: "Mobile Development",
+      examples: ["React Native", "Flutter", "Android"],
+    },
+    // {
+    //   name: "Web Development",
+    //   examples: ["HTML", "CSS", "JavaScript", "React", "Angular", "Vue.js"],
+    // },
+    // {
+    //   name: "Databases",
+    //   examples: ["MongoDB", "MySQL", "PostgreSQL", "Oracle", "SQL Server"],
+    // },
+    // {
+    //   name: "Cloud Computing",
+    //   examples: ["AWS", "Azure", "GCP"],
+    // },
+    // {
+    //   name: "DevOps",
+    //   examples: ["Ansible", "Chef", "Puppet", "Terraform", "Jenkins"],
+    // },
+    // {
+    //   name: "Machine Learning",
+    //   examples: ["Python", "R", "TensorFlow", "PyTorch", "Scikit-Learn"],
+    // },
+    // {
+    //   name: "Artificial Intelligence",
+    //   examples: ["Python", "R", "TensorFlow", "PyTorch", "OpenAI"],
+    // },
+    // {
+    //   name: "Big Data",
+    //   examples: ["Hadoop", "Spark", "Hive", "Pig", "HBase"],
+    // },
+    // {
+    //   name: "Blockchain",
+    //   examples: [
+    //     "Solidity",
+    //     "Python",
+    //     "JavaScript",
+    //     "Ethereum",
+    //     "Hyperledger Fabric",
+    //   ],
+    // },
+    // {
+    //   name: "Cryptography",
+    //   examples: ["C", "C++", "Java", "Python", "RSA", "AES"],
+    // },
+    // {
+    //   name: "Operating Systems",
+    //   examples: ["Linux", "Windows", "macOS", "FreeBSD", "Solaris"],
+    // },
+    // {
+    //   name: "Networking",
+    //   examples: ["TCP/IP", "HTTP", "DNS", "DHCP", "NAT"],
+    // },
+    // {
+    //   name: "Security",
+    //   examples: [
+    //     "Firewalls",
+    //     "Intrusion Detection Systems",
+    //     "Vulnerability Scanning",
+    //     "Malware Detection",
+    //     "Data Loss Prevention",
+    //   ],
+    // },
+    // {
+    //   name: "Testing",
+    //   examples: [],
+    // },
   ];
 
   return (
-    <section id="skills" className="skills section-bg">
+    <section id="skills" className="skills about section-bg">
       <div className="container">
         <div className="section-title">
           <h2>Skills</h2>
           <p>
-            Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex
-            aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam quos
-            quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia
-            fugiat sit in iste officiis commodi quidem hic quas.
+            Here are some specific programming skills I have. I am a highly
+            motivated and results-oriented individual. I am always looking for
+            new challenges and I am eager to learn new technologies.
           </p>
         </div>
 
@@ -66,7 +183,7 @@ function Skills() {
           onLeave={this._handleWaypointLeave}
         /> */}
 
-        <div className="row skills-content" id="skills-content">
+        {/* <div className="row skills-content" id="skills-content">
           {skills.map((skill) => (
             <div className="col-lg-6" data-aos="fade-up">
               <div className="progress">
@@ -163,6 +280,22 @@ function Skills() {
               </div>
             </div>
           </div>
+        </div> */}
+        <div className="row skill-content content">
+          {skills.map(({ name, examples }) => (
+            <div className="col-lg-4 col-md-4 col-sm-12">
+              <h5>{name}</h5>
+
+              <ul>
+                {examples.map((lang) => (
+                  <li>
+                    <i className="bi bi-chevron-right"></i>
+                    <span>{lang}</span>
+                  </li>
+                ))}
+              </ul>
+            </div>
+          ))}
         </div>
       </div>
     </section>
